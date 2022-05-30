@@ -6,6 +6,7 @@
 }
 body {
   background-image: url(idkreally.png);
+  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   overflow: hidden;
   animation: scroll 0.5s infinite linear;
@@ -13,14 +14,17 @@ body {
 
 h1 {
   background-color: #ffffff;
-  display: flex;
-  transform: rotateX(180deg);
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
 </style>
 <center>
 <h1>I am the Wise Nick I don't really do much</h1>
   <a href="/codemain.html">
-    <img src="/code/wise nick.png" width=512 height=512 style="transform: scaleX(-1);">
+    <img src="/code/wise nick.png" width=512 height=512 style="-webkit-transform: scaleX(-1); transform: scaleX(-1);">
   </a>
 </center>
 </body>
