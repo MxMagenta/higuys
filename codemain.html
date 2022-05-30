@@ -5,7 +5,12 @@
     <h1>Try different codes!</h1>
     </a>
 <form>
-  <p>Enter a four digit code <input id="codeValue" value="1" type="number"></input><button type="button" onclick="sendcode()">Attempt</button></p>
+  <p>Enter a four digit code
+  <br>
+  <input id="codeValue" value="1" type="text" autocomplete="false" autofill="false">
+  </input>
+  <br>
+  <button type="button" onclick="sendcode()">Attempt</button></p>
 </form>
 <script>
 function sendcode() {
