@@ -1,0 +1,25 @@
+<body>
+<style>
+@keyframes scroll {
+       from { background-position: 0 0; }
+       to { background-position: -247 0;}
+}
+body {
+  background-image: url(idkreally.png);
+  transform: scaleX(-1);
+  overflow: hidden;
+  animation: scroll 0.5s infinite linear;
+}
+
+h1 {
+  background-color: #ffffff;
+  transform: scaleX(-1);
+}
+</style>
+<center>
+<h1>I am the Wise Nick I don't really do much</h1>
+  <a href="/codemain.html">
+    <img src="/code/wise nick.png" width=512 height=512 style="transform: scaleX(-1);">
+  </a>
+</center>
+</body>
