@@ -5,24 +5,22 @@
     <h1>Try different codes!</h1>
     </a>
 <form>
-  <label for="codeValue">Enter a four digit code</label><br>
-  <input type="text" id="codeValue" name="codeValue" value=""><br>
-  <button type="submit" onclick="sendcode()">Attempt</button>
+  <p>Enter a four digit code <input id="codeValue" value="1" type="number"></input><button type="button" onclick="sendcode()">Attempt</button></p>
 </form>
 <script>
 function sendcode() {
 receivedcode = document.getElementById('codeValue').value
 
-if (recievedcode == "1234") {
+if (receivedcode == "1234") {
 window.location.href = "/code/1234.html";
 }
-if (recievedcode == "4321") {
+if (receivedcode == "4321") {
 window.location.href = "/code/4321.html";
 }
-if (recievedcode == "1211") {
+if (receivedcode == "1211") {
 window.location.href = "/code/1211.html";
 }
 }
 </script>
 
-</head
+</head>
