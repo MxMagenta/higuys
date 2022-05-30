@@ -1,13 +1,18 @@
 <body>
 <style>
 @keyframes scroll {
-       from { background-position: 0 0;  filter: hue-rotate(0deg);}
-       to { background-position: 400 -400;  filter: hue-rotate(360deg);}
+       from { background-position: 0 0;}
+       to { background-position: 400 -400;}
+}
+@keyframes color {
+       from { filter: hue-rotate(0deg);}
+       to { filter: hue-rotate(360deg);}
 }
 body {
   background-image: url(loop.png);
   overflow: hidden;
   animation: scroll 10s infinite linear;
+  animation: color 5s infinite linear;
 }
 
 h1 {
