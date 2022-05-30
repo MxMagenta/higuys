@@ -4,19 +4,25 @@
     <a href="homepage.html" style="text-decoration:none; color: 000000;">
     <h1>Try different codes!</h1>
     </a>
-    <style>
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
+<form>
+  <label for="codeValue">Enter a four digit code</label><br>
+  <input type="text" id="codeValue" name="codeValue" value=""><br>
+  <button type="submit" onclick="sendcode()">Attempt</button>
+</form>
+<script>
+function sendcode() {
+receivedcode = document.getElementById('codeValue').value
 
-.button1 {background-color: #4CAF50;} /* Green */
-.button2 {background-color: #008CBA;} /* Blue */
-</style>
+if (recievedcode == "1234") {
+window.location.href = "/code/1234.html";
+}
+if (recievedcode == "4321") {
+window.location.href = "/code/4321.html";
+}
+if (recievedcode == "1211") {
+window.location.href = "/code/1211.html";
+}
+}
+</script>
+
+</head
